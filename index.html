@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Etiketleri -->
+    <title>Vücut Kitle İndeksi (BMI) ve Kalori Hesaplama | Sağlıklı Yaşam</title>
+    <meta name="description" content="Ücretsiz BMI hesaplama, günlük kalori ihtiyacı hesaplama ve ideal kilo hesaplama aracı. Sağlıklı yaşam için vücut kitle indeksinizi hesaplayın.">
+    <meta name="keywords" content="BMI hesaplama, vücut kitle indeksi, kalori hesaplama, ideal kilo, diyet, sağlıklı yaşam, fitness hesaplayıcı">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sitenizinadi.com/">
+    <meta property="og:title" content="BMI ve Kalori Hesaplama | Sağlıklı Yaşam">
+    <meta property="og:description" content="Ücretsiz BMI hesaplama ve günlük kalori ihtiyacı hesaplama aracı">
+    <meta property="og:image" content="https://www.sitenizinadi.com/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.sitenizinadi.com/">
+    <meta property="twitter:title" content="BMI ve Kalori Hesaplama | Sağlıklı Yaşam">
+    <meta property="twitter:description" content="Ücretsiz BMI hesaplama ve günlük kalori ihtiyacı hesaplama aracı">
+    <meta property="twitter:image" content="https://www.sitenizinadi.com/images/twitter-image.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.sitenizinadi.com/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
+    <!-- Dil Bilgisi -->
+    <meta name="language" content="Turkish">
+    <meta http-equiv="content-language" content="tr">
+
+    <!-- Yazarlar -->
+    <meta name="author" content="Sitenizin Adı">
+    <meta name="copyright" content="Copyright © 2024 Sitenizin Adı">
+
+    <!-- Mevcut CSS ve Font bağlantıları -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2713493133790758" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Üst Banner Reklam -->
+        <div class="ad-container ad-banner">
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-2713493133790758"
+                data-ad-slot="2776264234"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <h1>Sağlık Hesaplamaları</h1>
+
+        <!-- BMI Hesaplayıcı -->
+        <div class="calculator">
+            <h2>Vücut Kitle İndeksi (BMI) Hesaplama</h2>
+            <div class="input-group">
+                <label for="weight">Kilonuz (kg):</label>
+                <input type="number" id="weight" min="0" step="0.1">
+            </div>
+            <div class="input-group">
+                <label for="height">Boyunuz (cm):</label>
+                <input type="number" id="height" min="0">
+            </div>
+            <button onclick="calculateBMI()">Hesapla</button>
+            <div id="bmiResult" class="result"></div>
+        </div>
+
+        <!-- Hesaplayıcılar Arası Reklam -->
+        <div class="ad-container ad-middle">
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-2713493133790758"
+                data-ad-slot="2776264234"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <!-- Kalori Hesaplayıcı -->
+        <div class="calculator">
+            <h2>Günlük Kalori İhtiyacı</h2>
+            <div class="input-group">
+                <label for="age">Yaşınız:</label>
+                <input type="number" id="age" min="0">
+            </div>
+            <div class="input-group">
+                <label>Cinsiyet:</label>
+                <select id="gender">
+                    <option value="male">Erkek</option>
+                    <option value="female">Kadın</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label>Aktivite Seviyesi:</label>
+                <select id="activity">
+                    <option value="1.2">Hareketsiz</option>
+                    <option value="1.375">Hafif Aktif</option>
+                    <option value="1.55">Orta Aktif</option>
+                    <option value="1.725">Çok Aktif</option>
+                </select>
+            </div>
+            <button onclick="calculateCalories()">Hesapla</button>
+            <div id="calorieResult" class="result"></div>
+        </div>
+
+        <!-- Alt Banner Reklam -->
+        <div class="ad-container ad-bottom">
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-2713493133790758"
+                data-ad-slot="2776264234"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

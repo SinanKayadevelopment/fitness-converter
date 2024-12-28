@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: 1px;
+}
+
+.calculator {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: transform 0.3s ease;
+}
+
+.calculator:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #1a2a6c;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #1a2a6c, #b21f1f);
+    border-radius: 2px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #1a2a6c;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e1e1e1;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+}
+
+input:focus, select:focus {
+    border-color: #1a2a6c;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(26,42,108,0.1);
+}
+
+button {
+    background: linear-gradient(45deg, #1a2a6c, #b21f1f);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #b21f1f, #1a2a6c);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.result {
+    margin-top: 25px;
+    padding: 20px;
+    background: linear-gradient(135deg, #1a2a6c0d, #b21f1f0d);
+    border-radius: 10px;
+    font-weight: 600;
+    color: #1a2a6c;
+    text-align: center;
+    font-size: 1.2em;
+    border: 2px solid rgba(26,42,108,0.1);
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        margin: 15px auto;
+    }
+    
+    .calculator {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+} 
+
+/* Reklam Konteynırları */
+.ad-container {
+    margin: 20px 0;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.ad-banner {
+    min-height: 90px;
+}
+
+.ad-middle {
+    min-height: 280px;
+}
+
+.ad-bottom {
+    min-height: 90px;
+}
+
+/* Mobil için reklam düzenlemeleri */
+@media (max-width: 600px) {
+    .ad-container {
+        margin: 15px 0;
+    }
+} 
